@@ -1,14 +1,14 @@
 version: "3.9"
 services:
   omnichem-frontend-app:
-    build: .
+    # build: .
     image: test:v1
     container_name: omnichem-frontend-app
     ports:
       - 5173:5173
-    working_dir: /srv/app
-    volumes:
-      - type: bind
-        source: ./
-        target: /srv/app
+    # working_dir: /srv/app
+    # volumes:
+    #   - type: bind
+    #     source: ./
+    #     target: /srv/app
     tty: true
